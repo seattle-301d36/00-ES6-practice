@@ -22,10 +22,10 @@ Follow these instructions carefully and in order.
 
 ##### Investigate how `let` and `const` are now used in the code. Where did you need to convert `const` into `let` to make the code work? Can you identify any patterns/similarities?
 
-(Put your answer here)
+Const was used whenever the value needed to remain constant and unchanged, while let was used to function as a more dynamic varaible. For example, let was used anytime there was a for loop counter, since the value would need to increment after each iteration of the loop. Respectively, using const prevents the accidental overwriting of initial values, which can be incredibly helpful with debugging in complex projects.
 
 ---
 
 ##### How did it go with making the adaptation from concatenations to template literal notation? Do you think you'll mostly use template literal notation from now on?
 
-(Put your answer here)
+I think it really depends about which makes the statement easiest to read. With regards to the subject of concatenation, template literal notation is by far the cleanest and easiest to read. The only exception would be if (for some reason) I needed to write code that supported older, non ES6 compliant browsers. As with everything in code...the answer is "it depends."  :)
