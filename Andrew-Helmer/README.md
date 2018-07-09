@@ -21,11 +21,11 @@ Follow these instructions carefully and in order.
 ---
 
 ##### Investigate how `let` and `const` are now used in the code. Where did you need to convert `const` into `let` to make the code work? Can you identify any patterns/similarities?
-
-(Put your answer here)
+let is used like var, but it is limited in scope to the block,statement, or expression
+I needed to change cont into let when the item needed to change like i in a for loop.
 
 ---
 
 ##### How did it go with making the adaptation from concatenations to template literal notation? Do you think you'll mostly use template literal notation from now on?
 
-(Put your answer here)
+It went ok and made the lines look cleaner. I might I just need to change my habit into using it.
