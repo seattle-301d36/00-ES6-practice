@@ -22,10 +22,10 @@ Follow these instructions carefully and in order.
 
 ##### Investigate how `let` and `const` are now used in the code. Where did you need to convert `const` into `let` to make the code work? Can you identify any patterns/similarities?
 
-(Put your answer here)
+Any loop that uses and if statement need to have its i repeating variable be declared with let rather than const. This makes sense, since setting const i = 0  at the beginning of the loop causes it to never loop (since i cannot change). By declaring it let i = 0, the value can be changed locally (within the loop) without error.
 
 ---
 
 ##### How did it go with making the adaptation from concatenations to template literal notation? Do you think you'll mostly use template literal notation from now on?
 
-(Put your answer here)
+I had no issues or bugs associated with changing the notation. I really like template literal notation and will definitely  use it from now on.
