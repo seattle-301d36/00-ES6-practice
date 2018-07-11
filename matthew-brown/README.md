@@ -5,7 +5,7 @@
 Follow these instructions carefully and in order.
 
 1. Open the HTML file in the browser to ensure that it works. 
-2. Turn all `var` variable declarations into `let`. 
+2. Turn all `var` variable declarations into `let`.
 3. After you do, there will be one error. Find that line in the code, delete that line and respond to the adjacent TODO item.
 4. Return to the browser to ensure that the code works again.
 5. **Save the code, and do a Git "add" and "commit".**
@@ -22,10 +22,10 @@ Follow these instructions carefully and in order.
 
 ##### Investigate how `let` and `const` are now used in the code. Where did you need to convert `const` into `let` to make the code work? Can you identify any patterns/similarities?
 
-(Put your answer here)
+One of the places I put let in istead of const is in the for loop . in looking into the differences between let and const, I found that const is "immutable" which means that it cannot be reassigned. I am still wrapping my head around the difference between adding values and and reassigning but suffice it to say that in a loop you are reassigning a variable for each iteration.  I also changed the variable rando to let because it is called in loops and was causing errors. Errors were also found in local storage so the allProduct Array was changed to let. 
 
 ---
 
 ##### How did it go with making the adaptation from concatenations to template literal notation? Do you think you'll mostly use template literal notation from now on?
 
-(Put your answer here)
+I definitely see where on a longer more complex lines the literal notation will save time (esp. with the spaces " " and periods "." ) As I use this more on the complex lines, it will become more natural to use it on the smaller lines as well. 
