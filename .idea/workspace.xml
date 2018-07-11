@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="57af9e12-efac-4a77-8dec-add818c4927d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/00_ES6_practice_war_exploded.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/00-ES6-practice.iml" beforeDir="false" afterPath="$PROJECT_DIR$/00-ES6-practice.iml" afterDir="false" />
-    </list>
+    <list default="true" id="57af9e12-efac-4a77-8dec-add818c4927d" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -141,12 +136,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1531284139653</updated>
-      <workItem from="1531284141336" duration="370000" />
+      <workItem from="1531284141336" duration="490000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="370000" />
+    <option name="totallyTimeSpent" value="490000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1292" height="692" extended-state="6" />
