@@ -10,9 +10,6 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileEditorManager">
-    <leaf />
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -36,9 +33,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -55,12 +50,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ideaProjects/happy-puppy" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../happy-puppy" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
@@ -141,7 +138,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="490000" />
+    <option name="totallyTimeSpent" value="498000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1292" height="692" extended-state="6" />
@@ -157,7 +154,7 @@
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32920355" />
       <window_info id="Capture Tool" />
       <window_info id="Designer" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
@@ -171,8 +168,8 @@
       <window_info id="Favorites" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
     </layout>
