@@ -1,18 +1,18 @@
 'use strict';
 
-var names = ['bag', 'banana', 'bathroom', 'boots', 'breakfast', 'bubblegum', 'chair', 'cthulhu', 'dog-duck', 'dragon', 'pen', 'pet-sweep', 'scissors', 'shark', 'sweep', 'tauntaun', 'unicorn', 'usb', 'water-can', 'wine-glass'];
+const names = ['bag', 'banana', 'bathroom', 'boots', 'breakfast', 'bubblegum', 'chair', 'cthulhu', 'dog-duck', 'dragon', 'pen', 'pet-sweep', 'scissors', 'shark', 'sweep', 'tauntaun', 'unicorn', 'usb', 'water-can', 'wine-glass'];
 
-var allProducts = [];
-var container = document.getElementById('image_container');
-var viewed = [];
-var labels = [];
-var pics = [document.getElementById('left'),
+let allProducts = [];
+let container = document.getElementById('image_container');
+let viewed = [];
+let labels = [];
+let pics = [document.getElementById('left'),
                 document.getElementById('center'), //eslint-disable-line
                 document.getElementById('right')]; //eslint-disable-line
-var list = document.getElementById('productlist');
-var totalClicks = 0;
-var views = [];
-var votes = [];
+let list = document.getElementById('productlist');
+let totalClicks = 0;
+let views = [];
+let votes = [];
 
 function Product(name) {
   this.name = name;
@@ -34,15 +34,15 @@ function displayPics(){
       viewed.push(rando);
     }
   }
-  console.log(rando);
-  // TODO: In a sentence or two, explain why the previous line of code threw an error when we changed the variable declaration from `var to `let`.
-  // I think it's because they scope to running exe context, which is contained inside of the function, whereas
-    //the console code is placed after the function is closed.
-  console.log(viewed)
+  // console.log(rando);
+  // TODone: In a sentence or two, explain why the previous line of code threw an error when we changed the variable declaration from `let to `let`.
+  // The scope for 'let' is tighter than let. Since rando is defined inside of function displayPics,
+  // and the console log is outside the scope of the function, it can't access the variable.
+  console.log(viewed);
 
   // To the DOM and beyond!
-  for (var i = 0; i < 3; i++){
-    var temp = viewed.shift();
+  for (let i = 0; i < 3; i++){
+    let temp = viewed.shift();
     pics[i].src = allProducts[temp].path;
     pics[i].id = allProducts[temp].name;
     allProducts[temp].views += 1;
@@ -60,7 +60,7 @@ function handleClick(event) {
     showList();
     makeChart();
   }
-  for(var i = 0; i < names.length; i++){
+  for(let i = 0; i < names.length; i++){
     if(event.target.id === allProducts[i].name) {
       allProducts[i].votes += 1;
       console.log(event.target.id + ' has ' + allProducts[i].votes + ' votes in ' + allProducts[i].views + ' views');
@@ -72,8 +72,8 @@ function handleClick(event) {
 }
 
 function showList() {
-  for(var i = 0; i < allProducts.length; i++) {
-    var liEl = document.createElement('li');
+  for(let i = 0; i < allProducts.length; i++) {
+    let liEl = document.createElement('li');
     liEl.textContent = allProducts[i].name + ' has ' + allProducts[i].votes + ' votes in ' + allProducts[i].views + ' views';
     list.appendChild(liEl);
   }
@@ -89,7 +89,7 @@ function makeChartData(){
 
 function makeChart(){
   makeChartData();
-  var ctx = document.getElementById('chartypants').getContext('2d');
+  let ctx = document.getElementById('chartypants').getContext('2d');
   new Chart(ctx, {
     type: 'bar',
     data: {
@@ -129,7 +129,7 @@ if(localStorage.busmall){
   allProducts = JSON.parse(localStorage.busmall)
 } else {
   console.log('There is no local storage data; initialize app by creating instances');
-  for(var i = 0; i < names.length; i++) {
+  for(let i = 0; i < names.length; i++) {
     new Product(names[i]);
   }
   console.log(allProducts);
