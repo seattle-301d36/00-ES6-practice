@@ -22,10 +22,18 @@ Follow these instructions carefully and in order.
 
 ##### Investigate how `let` and `const` are now used in the code. Where did you need to convert `const` into `let` to make the code work? Can you identify any patterns/similarities?
 
-(Put your answer here)
+Variable scope is straight forward. let is a huge improvement over var to the point where I'd say it's
+a bad practice to even use var. const on the other hand, is still a little squishy. It's also got a tight scope
+like let, but it partially prevents value changes. You can't re-assign, but you can update its values (squishy).
+Use const except where you need reassign it. Then use let. And define them both in the narrowest scope (in a block)
 
 ---
 
 ##### How did it go with making the adaptation from concatenations to template literal notation? Do you think you'll mostly use template literal notation from now on?
 
-(Put your answer here)
+Tough call. It's one of those things that is less clear if you know the core JavaScript languge, and then learn
+template literals. I find the former syntax easy to read. I think template literals add a lot of noise, to save
+a few characters. I probably would have recommended it never be developed. It's added another way to do simple
+task with different syntax. But - if it becomes dominant to the point where 80% of developers do it that way,
+and maybe there are some standards and practices bodies that decide its a best practice, then I'd follow that
+trend. I expect if I wrote it enough times, the complexity of the syntax would become more internalized.
